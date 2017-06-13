@@ -1,0 +1,141 @@
+html,
+body {
+	height: 100%
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	color: #fff;
+	font-family: arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+	font-weight: lighter;
+	overflow: hidden;
+}
+
+a {
+	outline: 0;
+	color: #fff;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+	border: 0
+}
+
+.ul {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.container {
+	position: relative;
+	height: 100%
+}
+
+.container article {
+	position: absolute;
+	bottom: 18%;
+	left: 8%;
+	z-index: 3;
+}
+
+.container article h1 {
+	opacity: 0;
+	margin: 0;
+	font-weight: lighter;
+	font-size: 60px;
+	text-align: left;
+	letter-spacing: 2px;
+}
+
+.container article p {
+	opacity: 0;
+	font-size: 16px;
+	line-height: 30px;
+	width: 400px;
+	text-align: left;
+	letter-spacing: 2px;
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-delay: .5s;
+	animation-delay: .5s;
+}
+
+.logo {
+	display: block;
+	position: absolute;
+	top: 3rem;
+	left: 3rem;
+	z-index: 3;
+}
+
+#bgcolor {
+	position: absolute;
+	right: 48%;
+	bottom: -150%;
+	height: 300%;
+	width: 100%;
+	background-color: rgba(115, 45, 231, 0.6);
+	pointer-events: none;
+	-webkit-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+	transition: .5s background-color;
+	z-index: 2
+}
+
+#clone article a {
+	display: block;
+	font-size: 12px;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-container.show {
+	opacity: 1;
+}
+
+.swiper-slide {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+.swiper-slide img {
+	display: none;
+	opacity: 0;
+}
+
+.swiper-slide article {
+	display: none;
+	opacity: 0;
+}
+
+.swiper-pagination {
+	bottom: 6%;
+	left: 8%;
+}
+
+.swiper-pagination-bullet {
+	height: 11px;
+	width: 11px;
+	margin-right: 18px;
+	background: #fff;
+	opacity: .3;
+}
+
+.swiper-pagination-bullet-active {
+	background: #fff;
+	opacity: 1;
+}
